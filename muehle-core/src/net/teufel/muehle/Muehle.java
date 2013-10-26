@@ -6,7 +6,6 @@ public class Muehle {
 		
 		System.out.println( CoordinateUtil.checkCoordinate(4, 6) );
 		System.out.println( CoordinateUtil.checkCoordinate(23, 1) );
-		System.out.println( CoordinateUtil.checkCoordinate(5, -6) );
 
 	}
 

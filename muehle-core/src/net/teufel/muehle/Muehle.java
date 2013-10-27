@@ -1,12 +1,22 @@
 package net.teufel.muehle;
 
+import java.util.Scanner;
+
 public class Muehle {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
+	int x;
+	int y;
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Geben sie die X-koordinate ein:");
+	x = scan.nextInt();
+	System.out.println("Geben sie die Y-koordinate ein:");
+	y = scan.nextInt();
+	scan.close();{
 		
-		System.out.println( CoordinateUtil.checkCoordinate(4, 6) );
-		System.out.println( CoordinateUtil.checkCoordinate(23, 1) );
+		System.out.println(CoordinateUtil.checkCoordinate(x,y));
 
 	}
 
+}
 }

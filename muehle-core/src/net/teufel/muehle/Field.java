@@ -1,9 +1,12 @@
 package net.teufel.muehle;
 
 public class Field {
-	public String fieldPosition(int x, int y){
-		String position;
-		position = x + "/" + y;
-		return position;
+	private String positonF = "";
+	
+	public String getPositon() {
+		return positonF;
+	}
+	public void setPositon(String positon) {
+		this.positonF = positon;
 	}
 }

@@ -12,11 +12,12 @@ public class Muehle {
 	x = scan.nextInt();
 	System.out.println("Geben sie die Y-koordinate ein:");
 	y = scan.nextInt();
-	scan.close();{
+	scan.close();
 		
 		System.out.println(CoordinateUtil.checkCoordinate(x,y));
 		System.out.println(CoordinateUtil.nextCoordinates(x,y));
+	
+	GameField gameField = new GameField();
+	
 	}
-
-}
 }

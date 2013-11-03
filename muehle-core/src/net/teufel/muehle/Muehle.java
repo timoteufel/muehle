@@ -15,9 +15,8 @@ public class Muehle {
 	scan.close();
 		
 		System.out.println(CoordinateUtil.checkCoordinate(x,y));
-		System.out.println(CoordinateUtil.nextCoordinates(x,y));
+	    System.out.println(CoordinateUtil.nextCoordinates(x,y));
 	
-	GameField gameField = new GameField();
 	
 	}
 }

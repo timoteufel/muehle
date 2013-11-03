@@ -2,6 +2,16 @@ package net.teufel.muehle;
 
 public class CoordinateUtil {
 
+	
+	public static CoordinateSystem erzeugeSpiel() {
+		
+		CoordinateSystem spiel = new CoordinateSystem();
+		
+		spiel.addField(new Field (1,1, CoordinateSystem.NICHT_BESETZT) );
+		
+		return spiel;
+	}
+	
 	public static String checkCoordinate(int x, int y) {
 		String ret = "";
 		if (x > 4)
@@ -90,7 +100,7 @@ public class CoordinateUtil {
 		if(y > 4)
 			Coordinate2 = x + "/" + (y - zO);
 		if(y < 4)
-			Coordinate2 = x + "/" + (y + zO);	//Berechnug für Ecken
+			Coordinate2 = x + "/" + (y + zO);	//Berechnung fuer Ecken
 		
 		if(x == 4 & y == 1)
 			{

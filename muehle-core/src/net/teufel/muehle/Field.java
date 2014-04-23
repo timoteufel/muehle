@@ -27,7 +27,14 @@ public class Field {
 	
 	@Override
 	public String toString() {
-		return "Position: " + x + "," + y;
+		String zustandText = "FREI";
+		if (this.zustand==CoordinateSystem.SCHWARZ) {
+			zustandText = "SCHWARZ";
+		}
+		if (this.zustand==CoordinateSystem.WEISS) {
+			zustandText = "WEISS";
+		}		
+		return "Position: " + x + "," + y + " Zustand: " + zustandText;
 	}
 	
 	public boolean istFeldBesetzt() {

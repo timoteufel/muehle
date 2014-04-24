@@ -16,6 +16,12 @@ public class Field {
 		this.x = x;
 		this.y = y;
 	}
+	public int gety() {
+		return y;
+	}
+	public int getx() {
+		return x;
+	}
 	
 	public void setZustand(int zustand) {
 		this.zustand = zustand;

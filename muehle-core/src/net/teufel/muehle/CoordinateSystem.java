@@ -18,6 +18,14 @@ public class CoordinateSystem {
 	public void addField(Field field) {
 		this.fields.add(field);
 	}
-	
+	public Field getField(int x, int y){
+		Field feld = null;
+		for (Field field : fields) {
+			if(x == field.getx() && y == field.gety()){
+			feld = field;
+			}
+		}
+		return feld;
+	}
 	
 }

@@ -3,7 +3,7 @@ package net.teufel.muehle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoordinateSystem {
+public class Muehlefeld {
 	
 	public final static int NICHT_BESETZT = 0;
 	public final static int WEISS = 1;

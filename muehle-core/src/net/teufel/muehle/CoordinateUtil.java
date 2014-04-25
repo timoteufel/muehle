@@ -1,18 +1,20 @@
 package net.teufel.muehle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CoordinateUtil {
 
-	public static CoordinateSystem erzeugeSpiel() {
+	public static Muehlefeld erzeugeSpiel() {
 		
 		int x = 1;
 		int y = 1;
 		int adder = 3;
 		boolean flag = true;
-		CoordinateSystem spiel = new CoordinateSystem();
-
+		Muehlefeld spiel = new Muehlefeld();
 		for (int i = 0; i < 24; i++) {
 			flag = true;
-			spiel.addField(new Field(x, y, CoordinateSystem.NICHT_BESETZT));
+			spiel.addField(new Field(x, y, Muehlefeld.NICHT_BESETZT));
 
 			if (x == 7 && y == 1) {
 				x = 2;
@@ -224,4 +226,5 @@ public class CoordinateUtil {
 				+ "," + Coordinate4;
 		return nextCoordinats;
 	}
+	
 }

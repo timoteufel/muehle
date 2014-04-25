@@ -1,7 +1,7 @@
 package net.teufel.muehle.tests;
 
 import static org.junit.Assert.*;
-import net.teufel.muehle.CoordinateSystem;
+import net.teufel.muehle.Muehlefeld;
 import net.teufel.muehle.CoordinateUtil;
 import net.teufel.muehle.Field;
 
@@ -12,7 +12,7 @@ public class CoordinatesTests {
 	@Test 
 	public void erzeugeSpielfeldTest() {
 		
-		CoordinateSystem spielfeld = CoordinateUtil.erzeugeSpiel();
+		Muehlefeld spielfeld = CoordinateUtil.erzeugeSpiel();
 		Field feld = new Field(2, 2, 0);
 		assertEquals(24, spielfeld.getFields().size());
 		assertEquals(feld.getZustand(), spielfeld.getField(2, 2).getZustand());	//Objekt

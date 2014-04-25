@@ -7,7 +7,7 @@ public class Muehle {
 	public static void main(String[] args){
 
 
-		CoordinateSystem spielfeld = CoordinateUtil.erzeugeSpiel();
+		Muehlefeld spielfeld = CoordinateUtil.erzeugeSpiel();
 	
 		for (Field field : spielfeld.getFields()) {
 			System.out.println(field.toString());

@@ -5,6 +5,7 @@ public class Field {
 	private int x;
 	private int y;
 	private int zustand;
+	private boolean warMuehle = false;
 	
 	public Field(int x, int y, int zustand) {
 		this.x = x;
@@ -34,10 +35,10 @@ public class Field {
 	@Override
 	public String toString() {
 		String zustandText = "FREI";
-		if (this.zustand==CoordinateSystem.SCHWARZ) {
+		if (this.zustand==Muehlefeld.SCHWARZ) {
 			zustandText = "SCHWARZ";
 		}
-		if (this.zustand==CoordinateSystem.WEISS) {
+		if (this.zustand==Muehlefeld.WEISS) {
 			zustandText = "WEISS";
 		}		
 		return "Position: " + x + "," + y + " Zustand: " + zustandText;
@@ -45,7 +46,7 @@ public class Field {
 	
 	public boolean istFeldBesetzt() {
 		
-		if (this.zustand != CoordinateSystem.NICHT_BESETZT)
+		if (this.zustand != Muehlefeld.NICHT_BESETZT)
 			return true;
 		return false;
 		

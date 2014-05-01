@@ -226,5 +226,405 @@ public class CoordinateUtil {
 				+ "," + Coordinate4;
 		return nextCoordinats;
 	}
+	public static void muehle(Muehlefeld muehlefeld, int z){
+		Field feld1 = new Field(1, 1, Muehlefeld.NICHT_BESETZT);
+		Field feld2 = new Field(1, 1, Muehlefeld.NICHT_BESETZT);
+		Field feld3 = new Field(1, 1, Muehlefeld.NICHT_BESETZT);
+		int x = 1;
+		int y = 1;
+		int adder = 3;
+		int zähler = 1;
+		boolean coor1 = false;
+		boolean coor2 = false;
+		boolean coor3 = false;
+		boolean flag = true;
+		boolean eins = true;
+		
+	for (int i = 0; i < 48; i++) {
+	if(eins){
+		flag = true;
+		if (zähler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor1 = true;
+			feld1 = muehlefeld.getField(x, y);
+		}
+		if (zähler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor2 = true;
+			feld2 = muehlefeld.getField(x, y);
+		}
+		if (zähler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor3 = true;
+			feld3 = muehlefeld.getField(x, y);
+		}
+		if (x == 7 && y == 1) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 2;
+			y = 2;
+			adder = 2;
+			zähler = 1;
+			flag = false;
+		}
+		
+		if (x == 6 && y == 2) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 3;
+			y = 3;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 5 && y == 3) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 3;
+			y = 5;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 5 && y == 5) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 2;
+			y = 6;
+			adder = 2;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 6 && y == 6) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 1;
+			y = 7;
+			adder = 3;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 7 && y == 7) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 1;
+			y = 4;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 3 && y == 4) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 5;
+			y = 4;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}	
+		if (x == 7 && y == 4) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						x = x - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 1;
+			y = 1;
+			adder = 3;
+			zähler = 1;
+			flag = false;
+			eins = false;
+		}
+		if (flag) {
+			x = x + adder;
+		}
+	}
+	else {
+		flag = true;
+		if (zähler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor1 = true;
+			feld1 = muehlefeld.getField(x, y);
+		}
+		if (zähler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor2 = true;
+			feld2 = muehlefeld.getField(x, y);
+		}
+		if (zähler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
+			coor3 = true;
+			feld3 = muehlefeld.getField(x, y);
+		}
+		if (x == 1 && y == 7) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 2;
+			y = 2;
+			adder = 2;
+			zähler = 1;
+			flag = false;
+		}
+		
+		if (x == 2 && y == 6) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 3;
+			y = 3;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 3 && y == 5) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 5;
+			y = 3;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 5 && y == 5) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 6;
+			y = 2;
+			adder = 2;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 6 && y == 6) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 7;
+			y = 1;
+			adder = 3;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 7 && y == 7) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 4;
+			y = 1;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}
+		if (x == 4 && y == 3) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+			coor1 = false;
+			coor2 = false;
+			coor3 = false;
+			x = 4;
+			y = 5;
+			adder = 1;
+			zähler = 1;
+			flag = false;
+		}	
+		if (x == 7 && y == 4) {
+			if(coor1 && coor2 && coor3){
+				if (feld1.isWarMuehle() && feld2.isWarMuehle() && feld3.isWarMuehle()) {
+					
+				} else {
+					for (int j = 0; j < 3; j++) {
+						muehlefeld.getField(x, y).setWarMuehle(true);
+						y = y - adder;
+					}
+					System.out.println("Spieler" + z + "hat eine Muehle");
+					//wegMethode
+				}
+			}
+		}
+		if (flag) {
+			y = y + adder;
+		}
+	}
+	}
+	}
 	
 }

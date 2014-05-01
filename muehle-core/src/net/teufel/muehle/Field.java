@@ -7,6 +7,14 @@ public class Field {
 	private int zustand;
 	private boolean warMuehle = false;
 	
+	public boolean isWarMuehle() {
+		return warMuehle;
+	}
+
+	public void setWarMuehle(boolean warMuehle) {
+		this.warMuehle = warMuehle;
+	}
+
 	public Field(int x, int y, int zustand) {
 		this.x = x;
 		this.y = y;

@@ -665,8 +665,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println(position1 + "---" + position2 + "---" + position3);
-				System.out.println("I   I   I");
+				System.out.println(position1 + "--------" + position2 + "--------" + position3);
+				System.out.println("I        I        I");
 			}
 			if (i == 1) {
 				zustand = muehlefeld.getField(2, 6).getZustand();
@@ -698,8 +698,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println("I" + position1 + "--" + position2 + "--" + position3 + "I");
-				System.out.println("II  I  II");
+				System.out.println("I  " + position1 + "-----" + position2 + "-----" + position3 + "  I");
+				System.out.println("I  I     I     I  I");
 			}
 			if (i == 2) {
 				zustand = muehlefeld.getField(3, 5).getZustand();
@@ -731,8 +731,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println("II" + position1 + "-" + position2 + "-" + position3 + "II");
-				System.out.println("III   III");
+				System.out.println("I  I  " + position1 + "--" + position2 + "--" + position3 + "  I  I");
+				System.out.println("I  I  I     I  I  I");
 			}
 			if (i == 3) {
 				zustand = muehlefeld.getField(1, 4).getZustand();
@@ -793,8 +793,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position6 = "O";
 				}
-				System.out.println(position1 + position2 + position3 + "   " + position4 + position5 + position6);
-				System.out.println("III   III");
+				System.out.println(position1 + "--" + position2 + "--" + position3 + "     " + position4 + "--" + position5 + "--" + position6);
+				System.out.println("I  I  I     I  I  I");
 			}
 			if (i == 4) {
 				zustand = muehlefeld.getField(3, 3).getZustand();
@@ -826,8 +826,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println("II"+ position1 + "-" + position2 + "-" + position3 + "II");
-				System.out.println("II  I  II");
+				System.out.println("I  I  " + position1 + "--" + position2 + "--" + position3 + "  I  I");
+				System.out.println("I  I     I     I  I");
 			}
 			if (i == 5) {
 				zustand = muehlefeld.getField(2, 2).getZustand();
@@ -859,8 +859,8 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println("I" + position1 + "--" + position2 + "--" + position3 + "I");
-				System.out.println("I   I   I");
+				System.out.println("I  " + position1 + "-----" + position2 + "-----" + position3 + "  I");
+				System.out.println("I        I        I");
 			}
 			if (i == 6) {
 				zustand = muehlefeld.getField(1, 1).getZustand();
@@ -892,7 +892,7 @@ public class CoordinateUtil {
 				if (zustand == Muehlefeld.NICHT_BESETZT) {
 					position3 = "O";
 				}
-				System.out.println(position1 + "---" + position2 + "---" + position3);
+				System.out.println(position1 + "--------" + position2 + "--------" + position3);
 			}
 			
 		}

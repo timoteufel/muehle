@@ -13,18 +13,18 @@ public class Muehle {
 			System.out.println(field.toString());
 		}
 		
-		int x;
-		int y;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Geben sie die X-koordinate ein:");
-		x = scan.nextInt();
-		System.out.println("Geben sie die Y-koordinate ein:");
-		y = scan.nextInt();
-		scan.close();
+		//int x;
+		//int y;
+		//Scanner scan = new Scanner(System.in);
+		//System.out.println("Geben sie die X-koordinate ein:");
+		//x = scan.nextInt();
+		//System.out.println("Geben sie die Y-koordinate ein:");
+		//y = scan.nextInt();
+		//scan.close();
 			
-		System.out.println(CoordinateUtil.checkCoordinate(x,y));
-		System.out.println(CoordinateUtil.nextCoordinates(x,y));
-	
+		//System.out.println(CoordinateUtil.checkCoordinate(x,y));
+		//System.out.println(CoordinateUtil.nextCoordinates(x,y));
+		CoordinateUtil.anzeige(spielfeld);
 	
 	}
 

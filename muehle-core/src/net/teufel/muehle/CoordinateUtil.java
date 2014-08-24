@@ -233,7 +233,7 @@ public class CoordinateUtil {
 		int x = 1;
 		int y = 1;
 		int adder = 3;
-		int zähler = 1;
+		int zaehler = 1;
 		boolean coor1 = false;
 		boolean coor2 = false;
 		boolean coor3 = false;
@@ -243,15 +243,15 @@ public class CoordinateUtil {
 	for (int i = 0; i < 48; i++) {
 	if(eins){
 		flag = true;
-		if (zähler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor1 = true;
 			feld1 = muehlefeld.getField(x, y);
 		}
-		if (zähler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor2 = true;
 			feld2 = muehlefeld.getField(x, y);
 		}
-		if (zähler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor3 = true;
 			feld3 = muehlefeld.getField(x, y);
 		}
@@ -274,7 +274,7 @@ public class CoordinateUtil {
 			x = 2;
 			y = 2;
 			adder = 2;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		
@@ -297,7 +297,7 @@ public class CoordinateUtil {
 			x = 3;
 			y = 3;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 5 && y == 3) {
@@ -319,7 +319,7 @@ public class CoordinateUtil {
 			x = 3;
 			y = 5;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 5 && y == 5) {
@@ -341,7 +341,7 @@ public class CoordinateUtil {
 			x = 2;
 			y = 6;
 			adder = 2;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 6 && y == 6) {
@@ -363,7 +363,7 @@ public class CoordinateUtil {
 			x = 1;
 			y = 7;
 			adder = 3;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 7 && y == 7) {
@@ -385,7 +385,7 @@ public class CoordinateUtil {
 			x = 1;
 			y = 4;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 3 && y == 4) {
@@ -407,7 +407,7 @@ public class CoordinateUtil {
 			x = 5;
 			y = 4;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}	
 		if (x == 7 && y == 4) {
@@ -429,7 +429,7 @@ public class CoordinateUtil {
 			x = 1;
 			y = 1;
 			adder = 3;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 			eins = false;
 		}
@@ -439,15 +439,15 @@ public class CoordinateUtil {
 	}
 	else {
 		flag = true;
-		if (zähler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 1 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor1 = true;
 			feld1 = muehlefeld.getField(x, y);
 		}
-		if (zähler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 2 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor2 = true;
 			feld2 = muehlefeld.getField(x, y);
 		}
-		if (zähler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
+		if (zaehler == 3 && muehlefeld.getField(x, y).getZustand() == z) {
 			coor3 = true;
 			feld3 = muehlefeld.getField(x, y);
 		}
@@ -470,7 +470,7 @@ public class CoordinateUtil {
 			x = 2;
 			y = 2;
 			adder = 2;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		
@@ -493,7 +493,7 @@ public class CoordinateUtil {
 			x = 3;
 			y = 3;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 3 && y == 5) {
@@ -515,7 +515,7 @@ public class CoordinateUtil {
 			x = 5;
 			y = 3;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 5 && y == 5) {
@@ -537,7 +537,7 @@ public class CoordinateUtil {
 			x = 6;
 			y = 2;
 			adder = 2;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 6 && y == 6) {
@@ -559,7 +559,7 @@ public class CoordinateUtil {
 			x = 7;
 			y = 1;
 			adder = 3;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 7 && y == 7) {
@@ -581,7 +581,7 @@ public class CoordinateUtil {
 			x = 4;
 			y = 1;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}
 		if (x == 4 && y == 3) {
@@ -603,7 +603,7 @@ public class CoordinateUtil {
 			x = 4;
 			y = 5;
 			adder = 1;
-			zähler = 1;
+			zaehler = 1;
 			flag = false;
 		}	
 		if (x == 7 && y == 4) {
@@ -626,5 +626,275 @@ public class CoordinateUtil {
 	}
 	}
 	}
-	
+	public static void anzeige(Muehlefeld muehlefeld){
+		String position1 = "";
+		String position2= "";
+		String position3 = "";
+		String position4 = "";
+		String position5= "";
+		String position6 = "";
+		int zustand;
+		for (int i = 0; i < 7; i++) {
+			if (i == 0) {
+				zustand = muehlefeld.getField(1, 7).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 7).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(7, 7).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println(position1 + "---" + position2 + "---" + position3);
+				System.out.println("I   I   I");
+			}
+			if (i == 1) {
+				zustand = muehlefeld.getField(2, 6).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 6).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(6, 6).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println("I" + position1 + "--" + position2 + "--" + position3 + "I");
+				System.out.println("II  I  II");
+			}
+			if (i == 2) {
+				zustand = muehlefeld.getField(3, 5).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 5).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(5, 5).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println("II" + position1 + "-" + position2 + "-" + position3 + "II");
+				System.out.println("III   III");
+			}
+			if (i == 3) {
+				zustand = muehlefeld.getField(1, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(2, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(3, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				zustand = muehlefeld.getField(5, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position4 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position4 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position4 = "O";
+				}
+				zustand = muehlefeld.getField(6, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position5 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position5 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position5 = "O";
+				}zustand = muehlefeld.getField(7, 4).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position6 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position6 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position6 = "O";
+				}
+				System.out.println(position1 + position2 + position3 + "   " + position4 + position5 + position6);
+				System.out.println("III   III");
+			}
+			if (i == 4) {
+				zustand = muehlefeld.getField(3, 3).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 3).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(5, 3).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println("II"+ position1 + "-" + position2 + "-" + position3 + "II");
+				System.out.println("II  I  II");
+			}
+			if (i == 5) {
+				zustand = muehlefeld.getField(2, 2).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 2).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(6, 2).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println("I" + position1 + "--" + position2 + "--" + position3 + "I");
+				System.out.println("I   I   I");
+			}
+			if (i == 6) {
+				zustand = muehlefeld.getField(1, 1).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position1 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position1 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position1 = "O";
+				}
+				zustand = muehlefeld.getField(4, 1).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position2 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position2 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position2 = "O";
+				}zustand = muehlefeld.getField(7, 1).getZustand();
+				if (zustand == Muehlefeld.WEISS) {
+					position3 = "W";
+				}
+				if (zustand == Muehlefeld.SCHWARZ) {
+					position3 = "S";
+				}
+				if (zustand == Muehlefeld.NICHT_BESETZT) {
+					position3 = "O";
+				}
+				System.out.println(position1 + "---" + position2 + "---" + position3);
+			}
+			
+		}
+	}
 }

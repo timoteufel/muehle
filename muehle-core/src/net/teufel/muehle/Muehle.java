@@ -6,6 +6,7 @@ public class Muehle {
 
 	public static void main(String[] args) {
 		int z = 1;
+		int zahl = 0;
 		boolean run = true;
 		int zaehler = 0;
 		Muehlefeld spielfeld = CoordinateUtil.erzeugeSpiel();
@@ -35,120 +36,190 @@ public class Muehle {
 			int y2 = 0;
 			Scanner scan = new Scanner(System.in);
 
-			if (zaehler != 6) {
+			if (zaehler != 18) {
 
 				while (aktiv) {
 					System.out.println("Feldx:");
 					x1 = scan.nextInt();
+					if(x1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						zaehler = zaehler - 1;
+						break;
+					}
 					System.out.println("Feldy:");
 					y1 = scan.nextInt();
+					if(y1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						zaehler = zaehler - 1;
+						break;
+					}
 					if (CoordinateUtil.bewegung1bestaetigung(x1, y1, spielfeld)) {
 						aktiv = false;
 						spielfeld.getField(x1, y1).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht m�glich");
+						System.out.println("Nicht moeglich");
 					}
 				}
-				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
-					aktiv = true;
 					spielfeld = CoordinateUtil.muehle(spielfeld, z);
-					while (aktiv) {
-						System.out.println("Feldx1:");
-						x1 = scan.nextInt();
-						System.out.println("Feldy1:");
-						y1 = scan.nextInt();
-						if (spielfeld.checkField(x1, y1)) {
-							if (spielfeld.getField(x1, y1).getZustand() != 0
-									&& spielfeld.getField(x1, y1).getZustand() != z) {
-
-								spielfeld.getField(x1, y1).setZustand(0);
-								CoordinateUtil.anzeige(spielfeld);
-							}
-						}
-					}
-				}
+				
 				zaehler = zaehler + 1;
 			}
 
-			if (spielfeld.countField(z) == 3) {
+			if (spielfeld.countField(z) == 3 && zaehler == 18) {
 				while (aktiv) {
 					System.out.println("Feldx1:");
 					x1 = scan.nextInt();
+					if(x1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldy1:");
 					y1 = scan.nextInt();
+					if(y1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldx2:");
-					x1 = scan.nextInt();
+					x2 = scan.nextInt();
+					if(x2 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldy2:");
-					y1 = scan.nextInt();
+					y2 = scan.nextInt();
+					if(y2 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					if (CoordinateUtil.bewegung3bestaetigung(x1, y1, x2, y2,
 							spielfeld, z)) {
 						aktiv = false;
 						spielfeld.getField(x1, y1).setZustand(0);
+						spielfeld.getField(x1, y1).setWarMuehle(false);
 						spielfeld.getField(x2, y2).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht m�glich");
+						System.out.println("Nicht moeglich");
 					}
 				}
-				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
-					aktiv = true;
 					spielfeld = CoordinateUtil.muehle(spielfeld, z);
-					while (aktiv) {
-						System.out.println("Feldx1:");
-						x1 = scan.nextInt();
-						System.out.println("Feldy1:");
-						y1 = scan.nextInt();
-						if (spielfeld.checkField(x1, y1)) {
-							if (spielfeld.getField(x1, y1).getZustand() != 0
-									&& spielfeld.getField(x1, y1).getZustand() != z) {
-
-								spielfeld.getField(x1, y1).setZustand(0);
-								CoordinateUtil.anzeige(spielfeld);
-							}
-						}
-					}
-				}
+		
 			}
 
-			if (spielfeld.countField(z) > 3) {
+			if (spielfeld.countField(z) > 3 && zaehler == 18) {
 				while (aktiv) {
 					System.out.println("Feldx1:");
 					x1 = scan.nextInt();
+					if(x1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldy1:");
 					y1 = scan.nextInt();
+					if(y1 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldx2:");
-					x1 = scan.nextInt();
+					x2 = scan.nextInt();
+					if(x2 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					System.out.println("Feldy2:");
-					y1 = scan.nextInt();
+					y2 = scan.nextInt();
+					if(y2 == 666) {
+						System.out.println(7);
+						System.out.println(6);
+						System.out.println(5);
+						System.out.println(4);
+						System.out.println(3);
+						System.out.println(2);
+						System.out.println("1 2 3 4 5 6 7");
+						korrekt = false;
+						break;
+					}
 					if (CoordinateUtil.nextCoordinates(x1, y1, x2, y2,
 							spielfeld, z)) {
 						aktiv = false;
 						spielfeld.getField(x1, y1).setZustand(0);
+						spielfeld.getField(x1, y1).setWarMuehle(false);
 						spielfeld.getField(x2, y2).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht m�glich");
+						System.out.println("Nicht moeglich");
 					}
 				}
-				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
-					aktiv = true;
 					spielfeld = CoordinateUtil.muehle(spielfeld, z);
-					while (aktiv) {
-						System.out.println("Feldx1:");
-						x1 = scan.nextInt();
-						System.out.println("Feldy1:");
-						y1 = scan.nextInt();
-						if (spielfeld.checkField(x1, y1)) {
-							if (spielfeld.getField(x1, y1).getZustand() != 0
-									&& spielfeld.getField(x1, y1).getZustand() != z) {
-
-								spielfeld.getField(x1, y1).setZustand(0);
-								CoordinateUtil.anzeige(spielfeld);
-							}
-						}
+					zahl++;
+					if(zahl == 3){
+						x1 = 0;		
 					}
-				}
+						
 			}
 
 			if (z == 1 && korrekt) {

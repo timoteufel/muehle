@@ -179,7 +179,7 @@ public class CoordinateUtil {
 						if (x1 == 4 & y1 == 1) {
 							Coordinate1 = "7/1";
 							Coordinate2 = "1/1";
-							Coordinate3 = "4/1";
+							Coordinate3 = "4/2";
 						}
 						if (x1 == 4 & y1 == 2) {
 							Coordinate1 = "6/2";
@@ -313,13 +313,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -338,13 +352,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -362,13 +390,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -386,13 +428,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -410,13 +466,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -434,12 +504,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -457,12 +542,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 
 						}
 					}
@@ -481,13 +581,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								x = x - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -502,6 +616,7 @@ public class CoordinateUtil {
 				}
 				if (flag) {
 					x = x + adder;
+					zaehler = zaehler + 1;
 				}
 			} else {
 				flag = true;
@@ -523,13 +638,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -548,13 +677,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -572,13 +715,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -596,13 +753,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -620,13 +791,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -644,13 +829,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -668,13 +867,27 @@ public class CoordinateUtil {
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
-
+							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 					coor1 = false;
@@ -686,24 +899,39 @@ public class CoordinateUtil {
 					zaehler = 1;
 					flag = false;
 				}
-				if (x == 7 && y == 4) {
+				if (x == 4 && y == 7) {
 					if (coor1 && coor2 && coor3) {
 						if (feld1.isWarMuehle() && feld2.isWarMuehle()
 								&& feld3.isWarMuehle()) {
 
 						} else {
-							for (int j = 0; j < 3; j++) {
+							for (int j = 0; j < 2; j++) {
 								muehlefeld.getField(x, y).setWarMuehle(true);
 								y = y - adder;
 							}
 							System.out.println("Spieler" + z
 									+ "hat eine Muehle");
 							korrekt = true;
+							while (korrekt) {
+								System.out.println("Feldx1:");
+								x1 = scan.nextInt();
+								System.out.println("Feldy1:");
+								y1 = scan.nextInt();
+								if (muehlefeld.checkField(x1, y1)) {
+									if (muehlefeld.getField(x1, y1).getZustand() != 0
+											&& muehlefeld.getField(x1, y1).getZustand() != z) {
+										korrekt = false;
+										muehlefeld.getField(x1, y1).setZustand(0);
+										CoordinateUtil.anzeige(muehlefeld);
+									}
+								}
+							}
 						}
 					}
 				}
 				if (flag) {
 					y = y + adder;
+					zaehler = zaehler + 1;
 				}
 			}
 		}

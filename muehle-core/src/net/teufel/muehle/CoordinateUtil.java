@@ -117,7 +117,7 @@ public class CoordinateUtil {
 		return ret;
 	}
 
-	public static Boolean bewegung1bestätgung(int x, int y,
+	public static Boolean bewegung1bestaetigung(int x, int y,
 			Muehlefeld muehlefeld) {
 		boolean ret = false;
 		if (muehlefeld.checkField(x, y)) {
@@ -259,7 +259,7 @@ public class CoordinateUtil {
 		return ret;
 	}
 
-	public static Boolean bewegung3bestätigung(int x1, int y1, int x2, int y2,
+	public static Boolean bewegung3bestaetigung(int x1, int y1, int x2, int y2,
 			Muehlefeld muehlefeld, int s) {
 		boolean ret = false;
 		if (muehlefeld.checkField(x1, y1)) {

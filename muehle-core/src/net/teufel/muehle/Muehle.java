@@ -7,7 +7,7 @@ public class Muehle {
 	public static void main(String[] args) {
 		int z = 1;
 		boolean run = true;
-		int zähler = 0;
+		int zaehler = 0;
 		Muehlefeld spielfeld = CoordinateUtil.erzeugeSpiel();
 
 		// for (Field field : spielfeld.getFields()) {
@@ -35,19 +35,19 @@ public class Muehle {
 			int y2 = 0;
 			Scanner scan = new Scanner(System.in);
 
-			if (zähler != 6) {
+			if (zaehler != 6) {
 
 				while (aktiv) {
 					System.out.println("Feldx:");
 					x1 = scan.nextInt();
 					System.out.println("Feldy:");
 					y1 = scan.nextInt();
-					if (CoordinateUtil.bewegung1bestätgung(x1, y1, spielfeld)) {
+					if (CoordinateUtil.bewegung1bestaetigung(x1, y1, spielfeld)) {
 						aktiv = false;
 						spielfeld.getField(x1, y1).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht möglich");
+						System.out.println("Nicht mï¿½glich");
 					}
 				}
 				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
@@ -68,7 +68,7 @@ public class Muehle {
 						}
 					}
 				}
-				zähler = zähler + 1;
+				zaehler = zaehler + 1;
 			}
 
 			if (spielfeld.countField(z) == 3) {
@@ -81,14 +81,14 @@ public class Muehle {
 					x1 = scan.nextInt();
 					System.out.println("Feldy2:");
 					y1 = scan.nextInt();
-					if (CoordinateUtil.bewegung3bestätigung(x1, y1, x2, y2,
+					if (CoordinateUtil.bewegung3bestaetigung(x1, y1, x2, y2,
 							spielfeld, z)) {
 						aktiv = false;
 						spielfeld.getField(x1, y1).setZustand(0);
 						spielfeld.getField(x2, y2).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht möglich");
+						System.out.println("Nicht mï¿½glich");
 					}
 				}
 				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
@@ -128,7 +128,7 @@ public class Muehle {
 						spielfeld.getField(x2, y2).setZustand(z);
 						CoordinateUtil.anzeige(spielfeld);
 					} else {
-						System.out.println("Nicht möglich");
+						System.out.println("Nicht mï¿½glich");
 					}
 				}
 				if (spielfeld != CoordinateUtil.muehle(spielfeld, z)) {
@@ -160,7 +160,7 @@ public class Muehle {
 				z = 1;
 				korrekt = false;
 			}
-			if (zähler == 18) {
+			if (zaehler == 18) {
 				if (spielfeld.countField(1) < 3) {
 					run = false;
 					System.out.println("Spieler 2 hat gewonnen");
